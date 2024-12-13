@@ -4,10 +4,10 @@
 
 ---
 
-~~🔹 **Desafio 1:** 10/12 - Feito em aula ([Link para repositório](https://github.com/seu_usuario/repositorio_do_desafio1))~~  
-~~🔹 **Desafio 2:** 11/12 ([Link para repositório](https://github.com/seu_usuario/repositorio_do_desafio2))~~  
-~~🔹 **Desafio 3:** 12/12 ([Link para repositório](https://github.com/seu_usuario/repositorio_do_desafio3))~~  
-~~🔹 **Desafio 4:** 12/12 ([Link para repositório](https://github.com/seu_usuario/repositorio_do_desafio4))~~  
+~~🔹 **Desafio 1:** 10/12 - Feito em aula ([entregue tem que add aqui](https://github.com/seu_usuario/repositorio_do_desafio1))~~  
+~~🔹 **Desafio 2:** 11/12 ([entregue tem que add aqui](https://github.com/seu_usuario/repositorio_do_desafio2))~~  
+~~🔹 **Desafio 3:** 12/12 ([entregue tem que add aqui](https://github.com/seu_usuario/repositorio_do_desafio3))~~  
+~~🔹 **Desafio 4:** 12/12 ([entregue tem que add aqui](https://github.com/seu_usuario/repositorio_do_desafio4))~~  
 🔹 **[Desafio 5: Desafio Final - 13.12.2024](https://github.com/caoslourenco/Desafios_Sap_Acc/tree/main/Desafio_Final)**
 
  
