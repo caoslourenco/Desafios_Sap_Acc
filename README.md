@@ -6,11 +6,8 @@
 ~~🔹 **Desafio 2:** 11/12~~  
 ~~🔹 **Desafio 3:** 12/12~~  
 ~~🔹 **Desafio 4:** 12/12~~  
-🔹 **Desafio 5:** Desafio Final - 13.12.2024
+🔹 **Desafio 5:** Desafio Final - 13.12.2024 
+ https://github.com/user-attachments/assets/d3e753a4-ae02-4660-a6d0-1cf9ecdaa484
 
-> **Execução do desafio:**  
-> <video width="320" height="240" autoplay controls>  
-https://github.com/user-attachments/assets/5acaa019-b429-4bc7-b879-813e4bce445a 
-> </video>
 
 > ⚠️ Em construção ⚠️
