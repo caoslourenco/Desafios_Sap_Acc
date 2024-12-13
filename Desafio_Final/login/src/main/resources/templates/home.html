@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Página Inicial 🐋 </title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #007bff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+        .navbar a:hover {
+            opacity: 0.8;
+        }
+        .container {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 50px);
+        }
+        .jumbotron {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .jumbotron h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .jumbotron p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #ffffff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        .gif-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .gif-container iframe {
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <span>Minha Aplicação</span>
+    <div>
+        <a href="/logout">Sair</a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1>Bem-vindo à Página Inicial!</h1>
+        <p>Você realizou o login com sucesso.</p>
+        <div class="gif-container">
+            <iframe src="https://giphy.com/embed/xVurSXSjNiifP8qLXy" width="300" height="300" allowFullScreen></iframe>
+        </div>
+        <a class="btn" href="/logout">Sair</a>
+    </div>
+</div>
+
+</body>
+</html>

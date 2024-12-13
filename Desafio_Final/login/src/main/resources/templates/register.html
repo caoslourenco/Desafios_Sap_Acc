@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registrar</title>
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .card-header h4 {
+            margin: 0;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+            color: #555;
+        }
+        .form-group input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 0 auto;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            background-color: #f9f9f9;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            color: #ffffff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        .text-danger {
+            color: #dc3545;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .text-success {
+            color: #28a745;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h4>Registrar</h4>
+        </div>
+        <div class="card-body">
+            <form th:action="@{/register}" th:object="${userDto}" method="post" novalidate>
+                <!-- Campo Nome de Usuário -->
+                <div class="form-group">
+                    <label for="username">Nome de Usuário</label>
+                    <input 
+                        type="text" 
+                        id="username" 
+                        th:field="*{username}" 
+                        placeholder="Insira o nome de usuário" 
+                        required
+                    />
+                    <div th:if="${#fields.hasErrors('username')}" class="text-danger">
+                        <p th:errors="*{username}">Nome de usuário inválido</p>
+                    </div>
+                </div>
+
+                <!-- Campo Senha -->
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        th:field="*{password}" 
+                        placeholder="Insira a senha" 
+                        required
+                    />
+                    <div th:if="${#fields.hasErrors('password')}" class="text-danger">
+                        <p th:errors="*{password}">Senha inválida</p>
+                    </div>
+                </div>
+
+                <!-- Campo Confirmar Senha -->
+                <div class="form-group">
+                    <label for="confirmPassword">Confirmar Senha</label>
+                    <input 
+                        type="password" 
+                        id="confirmPassword" 
+                        th:field="*{confirmPassword}" 
+                        placeholder="Confirme a senha" 
+                        required
+                    />
+                </div>
+
+                <!-- Mensagens de Erro -->
+                <div th:if="${passwordError}" class="text-danger mb-3">
+                    <p th:text="${passwordError}"></p>
+                </div>
+                <div th:if="${registrationError}" class="text-danger mb-3">
+                    <p th:text="${registrationError}"></p>
+                </div>
+
+                <!-- Mensagem de Sucesso -->
+                <div th:if="${successMessage}" class="text-success mb-3">
+                    <p th:text="${successMessage}"></p>
+                </div>
+
+                <!-- Botões -->
+                <button type="submit" class="btn">Confirmar Registro</button>
+                <button 
+                    type="button" 
+                    onclick="location.href='/login'" 
+                    class="btn btn-secondary"
+                >Voltar</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
